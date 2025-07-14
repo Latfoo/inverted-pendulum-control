@@ -12,3 +12,4 @@ dependencies:
       - pygame
       - setuptools
       - wheel
+      - moviepy
