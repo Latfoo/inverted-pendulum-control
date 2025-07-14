@@ -1,0 +1,14 @@
+name: rl-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - box2d-py
+  - matplotlib=3.7.2
+  - pip:
+      - gymnasium
+      - pygame
+      - setuptools
+      - wheel

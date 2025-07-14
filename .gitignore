@@ -1,0 +1,43 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# === Virtual environments ===
+venv/
+env/
+ENV/
+.venv/
+
+# === Jupyter Notebook Checkpoints ===
+.ipynb_checkpoints/
+
+# === PyInstaller ===
+*.spec
+
+# === IDEs & Editors ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Logs and Results ===
+*.log
+*.csv
+*.npy
+*.npz
+*.h5
+*.pkl
+results/
