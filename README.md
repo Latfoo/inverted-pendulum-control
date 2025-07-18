@@ -4,7 +4,9 @@ This project is a first look into controlling an inverted Pendulum using the Gym
 The pendulum starts in randomized state and is then controlled by a PD-Controller. Meanwhile random torque disturbances are being forced upon the pendulum.
 If terminated or truncated, the whole environment is being resetted. Each episode is being recorded and added to the results folder automatically.
 
-# Example Terminal Output
+## Demo
+
+![Demo](results\gif\pd_control-episode-0.gif)
 
 ```bash
 Running PD control with disturbances — press Ctrl+C to stop.
@@ -19,8 +21,6 @@ Disturbance torque: 2.65
 Stopped by user.
 ```
 
----
-
 ## Technologies Used
 
 - Python 3.10
@@ -28,28 +28,21 @@ Stopped by user.
 - NumPy
 - Pygame
 
----
+## Setup and Run
+Make sure you have [Conda](https://docs.conda.io) (or Anaconda) installed.
 
-## Setup (Conda recommended)
-
+Go into the project directory and type following command to create the environment.
 ```bash
 conda env create -f environment.yml
 ```
-
----
-
-## Project Structure
-
+To activate (if you have a different environment name, swap it for rl-env):
+```bash
+conda activate rl-env
 ```
-inverted-pendulum-control/
-├── pendulum_pd.py
-├── results/
-├── environment.yml
-└── README.md
+To run:
+```bash
+python pendulum_pd.py
 ```
-
----
-
 ## Author
 
 Latfoo
