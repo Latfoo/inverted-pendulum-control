@@ -6,7 +6,7 @@ If terminated or truncated, the whole environment is being resetted. Each episod
 
 ## Demo
 
-![Demo](results\gif\pd_control-episode-0.gif)
+![Demo](results/gif/pd_control-episode-0.gif)
 
 ```bash
 Running PD control with disturbances — press Ctrl+C to stop.
