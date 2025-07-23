@@ -9,7 +9,6 @@ KP = 20.0
 KD = 2.5
 
 # --- Environment Setup ---
-# changed render mode to be able to save result as a video
 env = gym.make("Pendulum-v1", render_mode="human")
 fps = env.metadata.get("render_fps", 60)
 dt = 1.0 / fps
