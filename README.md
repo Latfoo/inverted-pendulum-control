@@ -1,8 +1,17 @@
 # Inverted Pendulum
 
 This project is a first look into controlling an inverted Pendulum using the Gymnasium Environemt by Farama-Foundation.
-The pendulum starts in randomized state and is then controlled by a PD-Controller. Meanwhile random torque disturbances are being forced upon the pendulum.
-If terminated or truncated, the whole environment is being resetted. Each episode is being recorded and added to the results folder automatically.
+The pendulum starts in randomized state and is then controlled by a PD-Controller. Meanwhile random torque disturbances are being forced upon the pendulum. If terminated or truncated, the whole environment is being resetted.
+
+### Note on Video Recording
+
+Earlier versions of this project included a video recording feature using `moviepy` and `ffmpeg`.  
+To improve cross-platform compatibility and simplify setup, this feature has been removed.
+
+As a result:
+- The animation now runs live via `render_mode="human"`.
+- Users on Windows, macOS, and Linux can view it directly with no extra dependencies.
+- Some comments and code snippets related to video export remain in the source for reference.
 
 ## Demo
 

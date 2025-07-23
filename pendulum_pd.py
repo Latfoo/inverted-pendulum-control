@@ -1,7 +1,7 @@
 import gymnasium as gym
 import numpy as np
 import time
-from gymnasium.utils.save_video import save_video
+# from gymnasium.utils.save_video import save_video
 
 
 # --- PD Controller Parameters ---
@@ -10,7 +10,7 @@ KD = 2.5
 
 # --- Environment Setup ---
 # changed render mode to be able to save result as a video
-env = gym.make("Pendulum-v1", render_mode="rgb_array_list")
+env = gym.make("Pendulum-v1", render_mode="human")
 fps = env.metadata.get("render_fps", 60)
 dt = 1.0 / fps
 
@@ -26,7 +26,7 @@ def upright_start(env):
 
 
 obs = upright_start(env)
-episode_index = 0
+# episode_index = 0
 
 print("Running PD control with disturbances — press Ctrl+C to stop.")
 
@@ -55,17 +55,17 @@ try:
         # Reset
         if terminated or truncated:
             print("Environment reset...")
-            frames = env.render()  # this collects all stored frames
-            save_video(  # saves video
-                frames=frames,
-                video_folder="results/videos",
-                name_prefix="pd_control",
-                fps=fps,
-                episode_index=episode_index,
-            )
-            print(f"Saved episode {episode_index}")
+            # frames = env.render()  # this collects all stored frames
+            # save_video(  # saves video
+            #    frames=frames,
+            #    video_folder="results/videos",
+            #    name_prefix="pd_control",
+            #    fps=fps,
+            #    episode_index=episode_index,
+            # )
+            # print(f"Saved episode {episode_index}")
 
-            episode_index += 1
+            # episode_index += 1
             obs = upright_start(env)
 
 except KeyboardInterrupt:
