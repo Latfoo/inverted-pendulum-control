@@ -52,6 +52,8 @@ To run:
 ```bash
 python pendulum_pd.py
 ```
+
+Press Ctrl+C to stop simulation.
 ## Author
 
 Latfoo
